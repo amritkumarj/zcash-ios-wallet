@@ -177,7 +177,9 @@ final class SendFlowEnvironment: ObservableObject {
                 self.fail(FlowError.derivationFailed(message: "no spending key for account 1"))
                 return
             }
-            let replyToAddress = try DerivationTool.default.deriveViewingKey(spendingKey: spendingKey)
+            
+            let viewingKey = try DerivationTool.default.deriveViewingKey(spendingKey: spendingKey)
+            let replyToAddress = try DerivationTool.default.deriveShieldedAddress(viewingKey: viewingKey)
     
             UserSettings.shared.lastUsedAddress = self.address
             environment.synchronizer.send(

@@ -98,7 +98,7 @@ struct ProfileScreen: View {
                                 .frame(height: ScreenConstants.buttonHeight)
                         }
 
-                        ActionableMessage(message: "\("Nighthawk Wallet".localized()) v\(ZECCWalletEnvironment.appVersion ?? "Unknown")", actionText: "Build \(ZECCWalletEnvironment.appBuild ?? "Unknown")", action: {})
+                        ActionableMessage(message: "\("Nighthawk".localized()) v\(ZECCWalletEnvironment.appVersion ?? "Unknown")", actionText: "Build \(ZECCWalletEnvironment.appBuild ?? "Unknown")", action: {})
                         	.disabled(true)
                         
                         Button(action: {
