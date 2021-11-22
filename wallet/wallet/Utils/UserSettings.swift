@@ -19,6 +19,17 @@ class UserSettings {
         static let everShielded = "everShielded"
         static let rescanPendingFix = "rescanPendingFix"
         static let lastFeedbackDisplayedOnDate = "lastFeedbackDisplayedOnDate"
+        static let didShowAutoShieldingNotice = "didShowAutoShieldingNotice"
+        static let userTheme = "userTheme"
+    }
+    
+    var didShowAutoShieldingNotice: Bool {
+        get {
+            UserDefaults.standard.bool(forKey: Keys.didShowAutoShieldingNotice)
+        }
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: Keys.didShowAutoShieldingNotice)
+        }
     }
     
     var lastUsedAddress: String? {
@@ -61,4 +72,12 @@ class UserSettings {
         }
     }
     
+    var userTheme: Bool? {
+        get {
+            UserDefaults.standard.bool(forKey: Keys.userTheme)
+        }
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: Keys.userTheme)
+        }
+    }
 }

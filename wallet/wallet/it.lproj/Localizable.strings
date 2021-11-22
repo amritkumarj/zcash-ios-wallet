@@ -43,7 +43,7 @@
 "seed_enterdate" = "inserici data";
 "seed_birthday" = "Blocco iniziale";
 "button_dontknow" = "non lo so";
-"button_backup" = "Fare Backup";
+"button_back_up" = "Fare Backup";
 "button_skip" = "Salta per ora";
 "button_share_address" = "Share Address";
 

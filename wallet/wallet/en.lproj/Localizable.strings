@@ -25,7 +25,7 @@
 "button_share_address" = "Share Address";
 
 // profile screen
-"NUKE WALLET" = "NUKE WALLET";
+"NUKE WALLET" = "DELETE WALLET";
 "profile_screen" = "Shielded User\n";
 
 // WalletDetailsHeader
@@ -138,22 +138,22 @@
 "seed_remindertext" = "Remember, with Zcash YOU are the bank. Anyone with your seed phrase has access to your wallet.";
 "seed_remindertext2" = "You should back this up immediately as no one else can restore it for you.";
 "seed_reminder" = "Your funds are at risk!";
-"button_backup" = "Back up";
+"button_back_up" = "Back up";
 "button_skip" = "Skip for now";
 
 //NukeWarning
 
 
-"nuke_title" = "You are about to NUKE your wallet";
+"nuke_title" = "You are about to DELETE your wallet";
 "nuke_nukewarning" = "Remember, with Zcash YOU are the bank. Anyone with your seed phrase has access to your wallet.";
 "nuke_nukewarning2" = "Make sure you backed up your wallet before proceeding.";
-"nuke_nukewarning3" = "If you nuke  your wallet without backing up your seed, there's no way to recover it";
+"nuke_nukewarning3" = "If you delete your wallet without backing up your seed, there's no way to recover it";
 "nuke_nukeButton" = "DELETE WALLET";
 "nuke_backupbutton" = "Backup Now!";
 "nuke_alerttitle" = "Delete Wallet?";
-"nuke_alertmessage" = "You are about to nuke your wallet. Are you sure you want to proceed?";
+"nuke_alertmessage" = "You are about to delete your wallet. Are you sure you want to proceed?";
 "nuke_alertcancel" = "I'm not sure";
-"nuke_alertconfirm" = "NUKE WALLET!";
+"nuke_alertconfirm" = "DELETE WALLET!";
 
 //FeedBackForm
 "Feedback Sent!" = "Feedback Sent!";

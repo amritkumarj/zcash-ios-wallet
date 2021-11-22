@@ -17,7 +17,7 @@
 "seed_enterdate" = "输入日期";
 "seed_birthday" = "创建日期";
 "button_dontknow" = "我不知道 / 我忘了";
-"button_backup" = "备份";
+"button_back_up" = "备份";
 "button_skip" = "跳过";
 // Balance Screen
 "balance_screen" = "余额扫描";
@@ -81,13 +81,13 @@
 
 //NukeWarning
 
-"nuke_title" = "You are about to NUKE your wallet";
+"nuke_title" = "You are about to DELETE your wallet";
 "nuke_nukewarning" = "Remember, with Zcash YOU are the bank. Anyone with your seed phrase has access to your wallet.";
 "nuke_nukewarning2" = "Make sure you backed up your wallet before proceeding.";
-"nuke_nukewarning3" = "If you nuke  your wallet without backing up your seed, there's no way to recover it";
-"nuke_nukeButton" = "NUKE WALLET";
+"nuke_nukewarning3" = "If you delete your wallet without backing up your seed, there's no way to recover it";
+"nuke_nukeButton" = "DELETE WALLET";
 "nuke_backupbutton" = "Backup Now!";
 "nuke_alerttitle" = "Delete Wallet?";
-"nuke_alertmessage" = "You are about to nuke your wallet. Are you sure you want to proceed?";
+"nuke_alertmessage" = "You are about to delete your wallet. Are you sure you want to proceed?";
 "nuke_alertcancel" = "I'm not sure";
-"nuke_alertconfirm" = "NUKE WALLET!";
+"nuke_alertconfirm" = "DELETE WALLET!";

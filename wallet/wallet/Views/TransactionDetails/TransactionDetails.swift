@@ -73,7 +73,7 @@ struct TransactionDetails: View {
                 return PasteboardAlertHelper.alert(for: p)
             case .explorerNotice:
                 return Alert(title: Text("Leaving Nighthawk Wallet"),
-                             message: Text("While usually an acceptable risk, you will be possibly exposing your interest in this transaction id by visiting blockchair.com"),
+                             message: Text("While usually an acceptable risk, you will be possibly exposing your interest in this transaction id by visiting zcashblockexplorer.com"),
                              primaryButton: .cancel(Text("Cancel")),
                              secondaryButton: .default(Text("View TX Details"), action: {
                                 
@@ -92,7 +92,7 @@ struct TransactionDetails: View {
 
 extension DetailModel {
     var defaultFee: Int64 {
-        ZcashSDK.defaultFee(for: self.minedHeight > 0 ? self.minedHeight : (self.expirationHeight > 0 ? self.expirationHeight : BlockHeight.max))
+        ZCASH_NETWORK.constants.defaultFee(for: self.minedHeight > 0 ? self.minedHeight : (self.expirationHeight > 0 ? self.expirationHeight : BlockHeight.max))
     }
 }
 struct SubwayPathBuilder {

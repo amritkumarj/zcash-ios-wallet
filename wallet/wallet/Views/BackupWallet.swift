@@ -46,7 +46,7 @@ struct BackupWallet: View {
                 .padding(0)
                 Spacer()
                 NavigationLink(destination: SeedBackup(proceedsToHome: true).environmentObject(appEnvironment)){
-                    Text("button_backup")
+                    Text("button_back_up")
                         .font(.system(size: 20, weight: .regular, design: .default))
                         .foregroundColor(.black)
                         .zcashButtonBackground(shape: .roundedCorners(fillStyle: .gradient(gradient: LinearGradient.zButtonGradient)))

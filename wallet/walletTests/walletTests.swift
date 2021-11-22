@@ -139,7 +139,7 @@ class walletTests: XCTestCase {
     
     func testBlockExplorerUrl() {
         let txId = "4fd71c6363ac451674ae117f98e8225e0d4d1de67d44091287e62ba0ccf5358b"
-        let expectedMainnetURL = "https://blockchair.com/zcash/transaction/\(txId)"
+        let expectedMainnetURL = "https://zcashblockexplorer.com/transactions/\(txId)"
         let expectedTestnetURL = "https://explorer.testnet.z.cash/tx/\(txId)"
         
         let mainnetURL = UrlHandler.blockExplorerURLMainnet(for: txId)?.absoluteString

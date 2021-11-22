@@ -14,7 +14,6 @@ class UrlHandler {
         ZcashSDK.isMainnet ? blockExplorerURLMainnet(for: txId) : blockExplorerURLTestnet(for: txId)
     }
     
-    // blockchair does not support testnet zcash
     static func blockExplorerURLTestnet(for txId: String) -> URL? {
         var urlComponents = URLComponents()
 
@@ -27,9 +26,9 @@ class UrlHandler {
     
     static func blockExplorerURLMainnet(for txId: String) -> URL? {
         var urlComponents = URLComponents()
-        urlComponents.host = "blockchair.com"
+        urlComponents.host = "zcashblockexplorer.com"
         urlComponents.scheme = "https"
-        urlComponents.path = "/zcash/transaction"
+        urlComponents.path = "/transactions"
         
         return urlComponents.url?.appendingPathComponent(txId)
     }

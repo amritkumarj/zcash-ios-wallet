@@ -21,7 +21,7 @@ enum WalletState {
 
 
 final class ZECCWalletEnvironment: ObservableObject {
-    
+    static let autoShieldingThresholdInZatoshi: Int64 = Int64(ZcashSDK.ZATOSHI_PER_ZEC / 100)
     static let genericErrorMessage = "An error ocurred, please check your device logs"
     static var shared: ZECCWalletEnvironment = try! ZECCWalletEnvironment() // app can't live without this existing.
     static let memoLengthLimit: Int = 512
@@ -36,7 +36,14 @@ final class ZECCWalletEnvironment: ObservableObject {
     var outputParamsURL: URL
     var spendParamsURL: URL
     var synchronizer: CombineSynchronizer!
+    var autoShielder: AutoShielder!
     var cancellables = [AnyCancellable]()
+    var shouldShowAutoShieldingNotice: Bool {
+        shouldShowAutoShieldingNoticeScreen()
+    }
+    var shieldingAddress: String {
+        synchronizer.unifiedAddress.tAddress
+    }
     #if ENABLE_LOGGING
     var shouldShowFeedbackDialog: Bool { shouldShowFeedbackRequest() }
     #endif
@@ -88,7 +95,6 @@ final class ZECCWalletEnvironment: ObservableObject {
         self.pendingDbURL = try URL.pendingDbURL()
         self.outputParamsURL = try URL.outputParamsURL()
         self.spendParamsURL = try  URL.spendParamsURL()
-        
         self.state = .unprepared
     }
     
@@ -104,7 +110,7 @@ final class ZECCWalletEnvironment: ObservableObject {
         do {
             let randomPhrase = try MnemonicSeedProvider.default.randomMnemonic()
             
-            let birthday = WalletBirthday.birthday(with: BlockHeight.max)
+            let birthday = WalletBirthday.birthday(with: BlockHeight.max, network: ZCASH_NETWORK)
             
             try SeedManager.default.importBirthday(birthday.height)
             try SeedManager.default.importPhrase(bip39: randomPhrase)
@@ -118,13 +124,14 @@ final class ZECCWalletEnvironment: ObservableObject {
     func initialize() throws {
         let seedPhrase = try SeedManager.default.exportPhrase()
         let seedBytes = try MnemonicSeedProvider.default.toSeed(mnemonic: seedPhrase)
-        let viewingKeys = try DerivationTool.default.deriveUnifiedViewingKeysFromSeed(seedBytes, numberOfAccounts: 1)
+        let viewingKeys = try DerivationTool(networkType: ZCASH_NETWORK.networkType).deriveUnifiedViewingKeysFromSeed(seedBytes, numberOfAccounts: 1)
         
         let initializer = Initializer(
             cacheDbURL: self.cacheDbURL,
             dataDbURL: self.dataDbURL,
             pendingDbURL: self.pendingDbURL,
             endpoint: endpoint,
+            network: ZCASH_NETWORK,
             spendParamsURL: self.spendParamsURL,
             outputParamsURL: self.outputParamsURL,
             viewingKeys: viewingKeys,
@@ -132,7 +139,11 @@ final class ZECCWalletEnvironment: ObservableObject {
             loggerProxy: logger)
         
         self.synchronizer = try CombineSynchronizer(initializer: initializer)
-        
+        self.autoShielder = AutoShieldingBuilder.thresholdAutoShielder(
+            keyProvider: DefaultShieldingKeyProvider(),
+            shielder: self.synchronizer.synchronizer,
+            threshold: Self.autoShieldingThresholdInZatoshi,
+            balanceProviding: self.synchronizer)
         try self.synchronizer.prepare()
         
         self.subscribeToApplicationNotificationsPublishers()
@@ -162,8 +173,6 @@ final class ZECCWalletEnvironment: ObservableObject {
         if abortApplication {
             abort()
         }
-        
-        
     }
     
     fileprivate func deleteWalletFiles() throws {
@@ -294,13 +303,14 @@ final class ZECCWalletEnvironment: ObservableObject {
     }
     
     private var isSubscribedToAppDelegateEvents = false
-    
+    private var shouldRetryRestart = false
     private func registerBackgroundActivity() {
         if self.taskIdentifier == .invalid {
             self.taskIdentifier = UIApplication.shared.beginBackgroundTask(withName: "ZcashLightClientKit.SDKSynchronizer", expirationHandler: { [weak self, weak logger] in
                 logger?.info("BackgroundTask Expiration Handler Called")
                 guard let self = self else { return }
                 self.synchronizer.stop()
+                self.shouldRetryRestart = true
                 self.invalidateBackgroundActivity()
             })
         }
@@ -327,10 +337,12 @@ final class ZECCWalletEnvironment: ObservableObject {
                 
                 self.invalidateBackgroundActivity()
                 do {
-                    try self.synchronizer.start()
+                    try self.synchronizer.start(retry: self.shouldRetryRestart)
+                    self.shouldRetryRestart = false
                 } catch {
                     logger?.debug("applicationWillEnterForeground --> Error restarting: \(error)")
                 }
+                
                 
             }
             .store(in: &appCycleCancellables)
@@ -405,11 +417,11 @@ extension ZECCWalletEnvironment {
     }
     
     private func sufficientFunds(availableBalance: Int64, zatoshiToSend: Int64) -> Bool {
-        availableBalance - zatoshiToSend  - Int64(ZcashSDK.defaultFee()) >= 0
+        availableBalance - zatoshiToSend  - Int64(ZCASH_NETWORK.constants.defaultFee()) >= 0
     }
     
     static var minerFee: Double {
-        Int64(ZcashSDK.defaultFee()).asHumanReadableZecBalance()
+        Int64(ZCASH_NETWORK.constants.defaultFee()).asHumanReadableZecBalance()
     }
     
     func credentialsAlreadyPresent() -> Bool {
@@ -517,6 +529,15 @@ extension ZECCWalletEnvironment {
     }
 }
 
+extension ZECCWalletEnvironment {
+    func shouldShowAutoShieldingNoticeScreen() -> Bool {
+        return !UserSettings.shared.didShowAutoShieldingNotice
+    }
+    
+    func registerAutoShieldingNoticeScreenShown() {
+        UserSettings.shared.didShowAutoShieldingNotice = true
+    }
+}
 
 #if ENABLE_LOGGING
 extension ZECCWalletEnvironment {
@@ -538,3 +559,15 @@ extension ZECCWalletEnvironment {
     }
 }
 #endif
+
+
+extension ZcashSDK {
+    static var isMainnet: Bool {
+        switch ZCASH_NETWORK.networkType {
+        case .mainnet:
+            return true
+        case .testnet:
+            return false
+        }
+    }
+}

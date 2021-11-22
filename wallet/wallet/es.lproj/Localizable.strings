@@ -15,7 +15,7 @@
 "Critical Error" = "Critical Error";
 
 // messages
-"This wallet has not been initialized correctly! Perhaps an error occurred during install.\n\nThis can be fixed with a reset. First, locate your backup seed phrase, then \"Nuke Wallet\" and reimport it." = "This wallet has not been initialized correctly! Perhaps an error occurred during install.\n\nThis can be fixed with a reset. First, locate your backup seed phrase, then \"Nuke Wallet\" and reimport it.";
+"This wallet has not been initialized correctly! Perhaps an error occurred during install.\n\nThis can be fixed with a reset. First, locate your backup seed phrase, then \"Delete Wallet\" and reimport it." = "This wallet has not been initialized correctly! Perhaps an error occurred during install.\n\nThis can be fixed with a reset. First, locate your backup seed phrase, then \"Delete Wallet\" and reimport it.";
 "An error ocurred while syncing the blockchain. If the problem persists, back up your seed phrase and restore your wallet." = "An error ocurred while syncing the blockchain. If the problem persists, back up your seed phrase and restore your wallet.";
 "We are having problems with the network connection." = "We are having problems with the network connection.";
 "We were unable to send your transaction. Your funds are safe, we just need to wait until the transaction expires before you can send them again." = "We were unable to send your transaction. Your funds are safe, we just need to wait until the transaction expires before you can send them again.";
@@ -151,7 +151,7 @@
 "seed_remindertext" = "Recuerda, en Zcash tu eres el banco. Cualquiera que tenga tu frase semilla podrá acceder a tu wallet";
 "seed_remindertext2" = "Deberías respaldar tu wallet inmediatamente. Solo tú puedes hacerlo.";
 "seed_reminder" = "¡Tus fondos están en riesgo!";
-"button_backup" = "Respaldar";
+"button_back_up" = "Respaldar";
 "button_skip" = "Omitir por ahora";
 
 //NukeWarning
