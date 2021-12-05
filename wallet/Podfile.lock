@@ -1,6 +1,6 @@
 PODS:
   - _NIODataStructures (2.32.3)
-  - Bugsnag (6.14.3)
+  - Bugsnag (6.15.0)
   - CGRPCZlib (1.0.0)
   - CNIOAtomics (2.32.3)
   - CNIOBoringSSL (2.15.1)
@@ -91,7 +91,7 @@ PODS:
     - SwiftNIOTLS (< 3, >= 2.32.0)
   - SwiftProtobuf (1.18.0)
   - TinyQRScanner (1.0.1)
-  - ZcashLightClientKit (0.12.0-beta.4):
+  - ZcashLightClientKit (0.12.0-beta.5):
     - gRPC-Swift (= 1.0.0)
     - SQLite.swift (~> 0.12.2)
   - zealous-logger (1.0.0):
@@ -106,7 +106,7 @@ DEPENDENCIES:
   - Mixpanel-swift
   - MnemonicSwift (from `https://github.com/zcash-hackworks/MnemonicSwift.git`, branch `master`)
   - TinyQRScanner
-  - ZcashLightClientKit (from `https://github.com/zcash/ZcashLightClientKit.git`, tag `0.12.0-beta.4`)
+  - ZcashLightClientKit (from `https://github.com/zcash/ZcashLightClientKit.git`, tag `0.12.0-beta.5`)
   - zealous-logger (from `https://github.com/zcash-hackworks/zealous-logger`, branch `master`)
 
 SPEC REPOS:
@@ -151,7 +151,7 @@ EXTERNAL SOURCES:
     :git: https://github.com/zcash-hackworks/MnemonicSwift.git
   ZcashLightClientKit:
     :git: https://github.com/zcash/ZcashLightClientKit.git
-    :tag: 0.12.0-beta.4
+    :tag: 0.12.0-beta.5
   zealous-logger:
     :branch: master
     :git: https://github.com/zcash-hackworks/zealous-logger
@@ -162,14 +162,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/zcash-hackworks/MnemonicSwift.git
   ZcashLightClientKit:
     :git: https://github.com/zcash/ZcashLightClientKit.git
-    :tag: 0.12.0-beta.4
+    :tag: 0.12.0-beta.5
   zealous-logger:
     :commit: c9f8d8d9f74a456094b9143616da3b4eba91ddcf
     :git: https://github.com/zcash-hackworks/zealous-logger
 
 SPEC CHECKSUMS:
   _NIODataStructures: e2077c7dc7c1d6c93e698c85fe04d663a17f53a4
-  Bugsnag: 82cdfff1ddcfa9f06772dbbcab1684dabc9e5545
+  Bugsnag: 03d45cab6928a23c1725487bb4f8359c8bc641e3
   CGRPCZlib: b0c9d704a12fa667f1824ffff20688f191945989
   CNIOAtomics: 4dde57e1838a29a9b23ef91617505f34751cdbe5
   CNIOBoringSSL: c99129423da079a9eb74bcfc7cfec41a6775cf94
@@ -202,9 +202,9 @@ SPEC CHECKSUMS:
   SwiftNIOTransportServices: 1fbbdb58510af3c53a838a1dbea98f18132dc952
   SwiftProtobuf: c3c12645230d9b09c72267e0de89468c5543bd86
   TinyQRScanner: 4077088ff2e8d476af79e6035413648c2c7900ef
-  ZcashLightClientKit: dc087f89eb8924a467d5962623a00d7d81245a17
+  ZcashLightClientKit: 36355e1a185106eb3474a989a45c96d623643e2f
   zealous-logger: 2f33820d7d7e723796dabc51d60942b51b9ab024
 
-PODFILE CHECKSUM: b8b30519758f28f5bd54d5893039b560eea28a13
+PODFILE CHECKSUM: 5c2e86e60489054b63a80da1a21233d6f8d3465d
 
 COCOAPODS: 1.11.2
