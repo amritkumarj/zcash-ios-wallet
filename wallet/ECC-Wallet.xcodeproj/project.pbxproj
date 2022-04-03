@@ -379,13 +379,13 @@
 		0DF3075724DB4A440080B0CF /* lottie_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DF3075324DB4A440080B0CF /* lottie_success.json */; };
 		0DFC0CF123C7787F0009DD7E /* ZcashHoldToSendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC0CF023C7787F0009DD7E /* ZcashHoldToSendButton.swift */; };
 		0DFC0CF323C8EA1C0009DD7E /* ZcashCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC0CF223C8EA1C0009DD7E /* ZcashCloseButton.swift */; };
-		2D8068DEEA8A2D029E8644F8 /* Pods_ECC_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5618FAC821C57276C6FD8A /* Pods_ECC_Wallet.framework */; };
-		603B5A90CCCC88B07FC84C2A /* Pods_ECC_Wallet_Testnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA701D43D70A32BCE3B0BF2B /* Pods_ECC_Wallet_Testnet.framework */; };
+		77AF909FB94C7AC145DB8E2E /* Pods_ECC_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC9520D59318FFBF7676C4F /* Pods_ECC_Wallet.framework */; };
 		8D3F362524A40FCF0087687A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3F362724A40FCF0087687A /* Localizable.strings */; };
 		8D73959024A40E6C00936DE3 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73958F24A40E6C00936DE3 /* String+localized.swift */; };
-		91795088BA4567749F062812 /* Pods_ECC_WalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55B4ABAF2F1086AAF087465 /* Pods_ECC_WalletUITests.framework */; };
-		E1F8A062F3BDF63F6E0EAE9A /* Pods_ECC_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACABF82A9C95245FC83519D /* Pods_ECC_WalletTests.framework */; };
-		F74CF34369944C790A929D82 /* Pods_ECC_Wallet_no_logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E7EA55F3D43801F273A224 /* Pods_ECC_Wallet_no_logging.framework */; };
+		A3CD1D5F2A06174B5DB92A95 /* Pods_ECC_Wallet_Testnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6AFE8C3573AB9116F5307 /* Pods_ECC_Wallet_Testnet.framework */; };
+		AF84169D6EDDEF85508F798A /* Pods_ECC_Wallet_no_logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30987DE209C111D8E6B7463B /* Pods_ECC_Wallet_no_logging.framework */; };
+		C24C39A10C856DB3053751D8 /* Pods_ECC_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F90D732C9C828CC4A68C4C /* Pods_ECC_WalletTests.framework */; };
+		CC208B5F32BC634CEAF0533B /* Pods_ECC_WalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2EB272AF1A347C05322849 /* Pods_ECC_WalletUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -434,7 +434,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		058B182E8EDC0388B4BED0CF /* Pods-ECC-Wallet-Testnet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet-Testnet.debug.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet-Testnet/Pods-ECC-Wallet-Testnet.debug.xcconfig"; sourceTree = "<group>"; };
 		0D040F5823C3ECDD00ACD07E /* KeyPadViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPadViewModelTests.swift; sourceTree = "<group>"; };
 		0D0565D324EC89C200B6AAE8 /* TransactionDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetails.swift; sourceTree = "<group>"; };
 		0D0565D424EC89C200B6AAE8 /* DetailListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListing.swift; sourceTree = "<group>"; };
@@ -583,23 +582,24 @@
 		0DFC0CF023C7787F0009DD7E /* ZcashHoldToSendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcashHoldToSendButton.swift; sourceTree = "<group>"; };
 		0DFC0CF223C8EA1C0009DD7E /* ZcashCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcashCloseButton.swift; sourceTree = "<group>"; };
 		0DFC7D4B254C7EB600E10595 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		159892960621B7F4FB5B61DE /* Pods-ECC-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet.debug.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
-		2D5618FAC821C57276C6FD8A /* Pods_ECC_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		318E06008AB242D671EE43D8 /* Pods-ECC-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletTests.release.xcconfig"; path = "Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
-		36E33B43704978F1D2FE8912 /* Pods-ECC-Wallet-no-logging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet-no-logging.debug.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging.debug.xcconfig"; sourceTree = "<group>"; };
-		77F33BFE519EA727A663A8C6 /* Pods-ECC-WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletUITests.debug.xcconfig"; path = "Target Support Files/Pods-ECC-WalletUITests/Pods-ECC-WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A2EB272AF1A347C05322849 /* Pods_ECC_WalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_WalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27077FD0F143F2275F82BFD0 /* Pods-ECC-WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletUITests.debug.xcconfig"; path = "Target Support Files/Pods-ECC-WalletUITests/Pods-ECC-WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		30987DE209C111D8E6B7463B /* Pods_ECC_Wallet_no_logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_Wallet_no_logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F90D732C9C828CC4A68C4C /* Pods_ECC_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_WalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC9520D59318FFBF7676C4F /* Pods_ECC_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76EE601CACFADE04FB6E699F /* Pods-ECC-Wallet-no-logging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet-no-logging.release.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging.release.xcconfig"; sourceTree = "<group>"; };
 		8D3F362624A40FCF0087687A /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D3F362824A40FDF0087687A /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D73958F24A40E6C00936DE3 /* String+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
-		96A9AF65A0DDBF79EB116C5C /* Pods-ECC-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet.release.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet.release.xcconfig"; sourceTree = "<group>"; };
-		A5E7EA55F3D43801F273A224 /* Pods_ECC_Wallet_no_logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_Wallet_no_logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BACABF82A9C95245FC83519D /* Pods_ECC_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_WalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8569B8A4939C2D8CEE1E6F1 /* Pods-ECC-WalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletUITests.release.xcconfig"; path = "Target Support Files/Pods-ECC-WalletUITests/Pods-ECC-WalletUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CA701D43D70A32BCE3B0BF2B /* Pods_ECC_Wallet_Testnet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_Wallet_Testnet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E55B4ABAF2F1086AAF087465 /* Pods_ECC_WalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_WalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF01D5102D7FADE11D11C96B /* Pods-ECC-Wallet-Testnet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet-Testnet.release.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet-Testnet/Pods-ECC-Wallet-Testnet.release.xcconfig"; sourceTree = "<group>"; };
-		F438A2650044C860F1EBEE4D /* Pods-ECC-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FC66928975BDE84FA99E4352 /* Pods-ECC-Wallet-no-logging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet-no-logging.release.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging.release.xcconfig"; sourceTree = "<group>"; };
+		A9C936ECAE650756CD95A13C /* Pods-ECC-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet.debug.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		AC389044A9F41BDDC7CD8191 /* Pods-ECC-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletTests.release.xcconfig"; path = "Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFD5201D57BD84169EE880E7 /* Pods-ECC-Wallet-Testnet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet-Testnet.debug.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet-Testnet/Pods-ECC-Wallet-Testnet.debug.xcconfig"; sourceTree = "<group>"; };
+		B399D06BFAE9ED04ED5CC009 /* Pods-ECC-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDC6AFE8C3573AB9116F5307 /* Pods_ECC_Wallet_Testnet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECC_Wallet_Testnet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43042AD1185E522A0D57B67 /* Pods-ECC-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet.release.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet.release.xcconfig"; sourceTree = "<group>"; };
+		C949FC3397CC07567DC60928 /* Pods-ECC-Wallet-Testnet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet-Testnet.release.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet-Testnet/Pods-ECC-Wallet-Testnet.release.xcconfig"; sourceTree = "<group>"; };
+		D3BFA5E7B1111D26654F4B76 /* Pods-ECC-WalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletUITests.release.xcconfig"; path = "Target Support Files/Pods-ECC-WalletUITests/Pods-ECC-WalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDA0E8BB8902BB0283102CA6 /* Pods-ECC-Wallet-no-logging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-Wallet-no-logging.debug.xcconfig"; path = "Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -607,7 +607,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8068DEEA8A2D029E8644F8 /* Pods_ECC_Wallet.framework in Frameworks */,
+				77AF909FB94C7AC145DB8E2E /* Pods_ECC_Wallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,7 +615,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F8A062F3BDF63F6E0EAE9A /* Pods_ECC_WalletTests.framework in Frameworks */,
+				C24C39A10C856DB3053751D8 /* Pods_ECC_WalletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +623,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91795088BA4567749F062812 /* Pods_ECC_WalletUITests.framework in Frameworks */,
+				CC208B5F32BC634CEAF0533B /* Pods_ECC_WalletUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,7 +631,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F74CF34369944C790A929D82 /* Pods_ECC_Wallet_no_logging.framework in Frameworks */,
+				AF84169D6EDDEF85508F798A /* Pods_ECC_Wallet_no_logging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +639,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				603B5A90CCCC88B07FC84C2A /* Pods_ECC_Wallet_Testnet.framework in Frameworks */,
+				A3CD1D5F2A06174B5DB92A95 /* Pods_ECC_Wallet_Testnet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,7 +736,7 @@
 				EA66A8F666D2E80F5C4EC4F5 /* Pods */,
 				0DCDFFE724B6722B000F6999 /* ECC-Wallet-no-logs-Info.plist */,
 				0DE303C5263A158400CF877A /* ECC-Wallet-Testnet-Info.plist */,
-				B441585B7105285C0821241B /* Frameworks */,
+				49575C9CA1732607B74EB522 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -949,14 +949,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B441585B7105285C0821241B /* Frameworks */ = {
+		49575C9CA1732607B74EB522 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D5618FAC821C57276C6FD8A /* Pods_ECC_Wallet.framework */,
-				CA701D43D70A32BCE3B0BF2B /* Pods_ECC_Wallet_Testnet.framework */,
-				A5E7EA55F3D43801F273A224 /* Pods_ECC_Wallet_no_logging.framework */,
-				BACABF82A9C95245FC83519D /* Pods_ECC_WalletTests.framework */,
-				E55B4ABAF2F1086AAF087465 /* Pods_ECC_WalletUITests.framework */,
+				5BC9520D59318FFBF7676C4F /* Pods_ECC_Wallet.framework */,
+				BDC6AFE8C3573AB9116F5307 /* Pods_ECC_Wallet_Testnet.framework */,
+				30987DE209C111D8E6B7463B /* Pods_ECC_Wallet_no_logging.framework */,
+				48F90D732C9C828CC4A68C4C /* Pods_ECC_WalletTests.framework */,
+				1A2EB272AF1A347C05322849 /* Pods_ECC_WalletUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -964,16 +964,16 @@
 		EA66A8F666D2E80F5C4EC4F5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				159892960621B7F4FB5B61DE /* Pods-ECC-Wallet.debug.xcconfig */,
-				96A9AF65A0DDBF79EB116C5C /* Pods-ECC-Wallet.release.xcconfig */,
-				058B182E8EDC0388B4BED0CF /* Pods-ECC-Wallet-Testnet.debug.xcconfig */,
-				EF01D5102D7FADE11D11C96B /* Pods-ECC-Wallet-Testnet.release.xcconfig */,
-				36E33B43704978F1D2FE8912 /* Pods-ECC-Wallet-no-logging.debug.xcconfig */,
-				FC66928975BDE84FA99E4352 /* Pods-ECC-Wallet-no-logging.release.xcconfig */,
-				F438A2650044C860F1EBEE4D /* Pods-ECC-WalletTests.debug.xcconfig */,
-				318E06008AB242D671EE43D8 /* Pods-ECC-WalletTests.release.xcconfig */,
-				77F33BFE519EA727A663A8C6 /* Pods-ECC-WalletUITests.debug.xcconfig */,
-				C8569B8A4939C2D8CEE1E6F1 /* Pods-ECC-WalletUITests.release.xcconfig */,
+				A9C936ECAE650756CD95A13C /* Pods-ECC-Wallet.debug.xcconfig */,
+				C43042AD1185E522A0D57B67 /* Pods-ECC-Wallet.release.xcconfig */,
+				AFD5201D57BD84169EE880E7 /* Pods-ECC-Wallet-Testnet.debug.xcconfig */,
+				C949FC3397CC07567DC60928 /* Pods-ECC-Wallet-Testnet.release.xcconfig */,
+				FDA0E8BB8902BB0283102CA6 /* Pods-ECC-Wallet-no-logging.debug.xcconfig */,
+				76EE601CACFADE04FB6E699F /* Pods-ECC-Wallet-no-logging.release.xcconfig */,
+				B399D06BFAE9ED04ED5CC009 /* Pods-ECC-WalletTests.debug.xcconfig */,
+				AC389044A9F41BDDC7CD8191 /* Pods-ECC-WalletTests.release.xcconfig */,
+				27077FD0F143F2275F82BFD0 /* Pods-ECC-WalletUITests.debug.xcconfig */,
+				D3BFA5E7B1111D26654F4B76 /* Pods-ECC-WalletUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -985,13 +985,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D12512923B557E60014EE3A /* Build configuration list for PBXNativeTarget "ECC-Wallet" */;
 			buildPhases = (
-				D5A9876DA160F45BE63B140F /* [CP] Check Pods Manifest.lock */,
+				8DFBFA0889C78EB62EA3B725 /* [CP] Check Pods Manifest.lock */,
 				0D100EC623BA642E0089DB22 /* ShellScript */,
 				0D1250FB23B557E40014EE3A /* Sources */,
 				0D1250FC23B557E40014EE3A /* Frameworks */,
 				0D1250FD23B557E40014EE3A /* Resources */,
 				AFBFA011C32F80A73756DCC0 /* Upload Bugsnag dSYM */,
-				E7E2B8169ABD70574931A79D /* [CP] Embed Pods Frameworks */,
+				ACB5FED7D06D154B7542A14D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1006,11 +1006,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D12512C23B557E60014EE3A /* Build configuration list for PBXNativeTarget "ECC-WalletTests" */;
 			buildPhases = (
-				559863F2B485E96BFE73268C /* [CP] Check Pods Manifest.lock */,
+				EBC68B89D54B5D532193479E /* [CP] Check Pods Manifest.lock */,
 				0D12511123B557E60014EE3A /* Sources */,
 				0D12511223B557E60014EE3A /* Frameworks */,
 				0D12511323B557E60014EE3A /* Resources */,
-				10B62D0EF59F13197A79BF8B /* [CP] Embed Pods Frameworks */,
+				C8EACF08AAFF6DFB1D467D30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1028,7 +1028,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D12512F23B557E60014EE3A /* Build configuration list for PBXNativeTarget "ECC-WalletUITests" */;
 			buildPhases = (
-				C9C3F5F0F40686FA33C12CFD /* [CP] Check Pods Manifest.lock */,
+				F8FBDF16C60751180DBBF5AE /* [CP] Check Pods Manifest.lock */,
 				0D12511C23B557E60014EE3A /* Sources */,
 				0D12511D23B557E60014EE3A /* Frameworks */,
 				0D12511E23B557E60014EE3A /* Resources */,
@@ -1050,12 +1050,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DCDFFE324B6722B000F6999 /* Build configuration list for PBXNativeTarget "ECC-Wallet-no-logging" */;
 			buildPhases = (
-				8973C3B6EABE7DEFDD475601 /* [CP] Check Pods Manifest.lock */,
-				0DC64717251A42FB0058AB9B /* ShellScript */,
+				97DB189E260B9DE4657C3A86 /* [CP] Check Pods Manifest.lock */,
 				0DCDFF9624B6722B000F6999 /* Sources */,
 				0DCDFFD724B6722B000F6999 /* Frameworks */,
 				0DCDFFD924B6722B000F6999 /* Resources */,
-				F96A18D5E304CF3F0E42E46A /* [CP] Embed Pods Frameworks */,
+				8F1AFFD60890263EDA8202C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1070,13 +1069,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DE303C1263A158400CF877A /* Build configuration list for PBXNativeTarget "ECC-Wallet-Testnet" */;
 			buildPhases = (
-				F5204091B012E4760CC918D7 /* [CP] Check Pods Manifest.lock */,
+				F4A94A3819B2747DC33CDA5A /* [CP] Check Pods Manifest.lock */,
 				0DE30347263A158400CF877A /* ShellScript */,
 				0DE30348263A158400CF877A /* Sources */,
 				0DE303B1263A158400CF877A /* Frameworks */,
 				0DE303B3263A158400CF877A /* Resources */,
 				0DE303C0263A158400CF877A /* Upload Bugsnag dSYM */,
-				3D831065F9CB61E76E831835 /* [CP] Embed Pods Frameworks */,
+				5607FE7CBC9325955685E929 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1221,23 +1220,6 @@
 			shellPath = /bin/sh;
 			shellScript = "source ${SRCROOT}/env-vars.sh\nsh ${PROJECT_DIR}/Scripts/generate_constants.sh\n";
 		};
-		0DC64717251A42FB0058AB9B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "source ${SRCROOT}/env-vars.sh\nsh ${PROJECT_DIR}/Scripts/generate_constants.sh\n\n";
-		};
 		0DE30347263A158400CF877A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1275,24 +1257,7 @@
 			shellScript = "# First, attempt to get the API key from an environment variable\napi_key = ENV[\"BUGSNAG_API_KEY\"]\n\n# If not present, attempt to lookup the value from the Info.plist\nif !api_key\n  default_info_plist_location = Dir.glob(\"./{ios/,}*/Info.plist\").reject {|path| path =~ /build|test/i }\n  plist_buddy_response = `/usr/libexec/PlistBuddy -c \"print :BugsnagAPIKey\" \"#{default_info_plist_location.first}\"`\n  api_key = plist_buddy_response if $?.success?\nend\n\nfork do\n  Process.setsid\n  STDIN.reopen(\"/dev/null\")\n  STDOUT.reopen(\"/dev/null\", \"a\")\n  STDERR.reopen(\"/dev/null\", \"a\")\n\n  require 'shellwords'\n\n  Dir[\"#{ENV[\"DWARF_DSYM_FOLDER_PATH\"]}/*/Contents/Resources/DWARF/*\"].each do |dsym|\n    curl_command = \"curl -F dsym=@#{Shellwords.escape(dsym)} -F projectRoot=#{Shellwords.escape(ENV[\"PROJECT_DIR\"])} \"\n    curl_command += \"-F apiKey=#{Shellwords.escape(api_key)} \" if api_key\n    curl_command += \"https://upload.bugsnag.com/\"\n    system(curl_command)\n  end\nend\n";
 			showEnvVarsInLog = 0;
 		};
-		10B62D0EF59F13197A79BF8B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D831065F9CB61E76E831835 /* [CP] Embed Pods Frameworks */ = {
+		5607FE7CBC9325955685E929 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1309,7 +1274,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet-Testnet/Pods-ECC-Wallet-Testnet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		559863F2B485E96BFE73268C /* [CP] Check Pods Manifest.lock */ = {
+		8DFBFA0889C78EB62EA3B725 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1324,14 +1289,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ECC-WalletTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ECC-Wallet-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8973C3B6EABE7DEFDD475601 /* [CP] Check Pods Manifest.lock */ = {
+		8F1AFFD60890263EDA8202C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97DB189E260B9DE4657C3A86 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1372,6 +1354,23 @@
 			shellScript = "# First, attempt to get the API key from an environment variable\napi_key = ENV[\"BUGSNAG_API_KEY\"]\n\n# If not present, attempt to lookup the value from the Info.plist\nif !api_key\n  default_info_plist_location = Dir.glob(\"./{ios/,}*/Info.plist\").reject {|path| path =~ /build|test/i }\n  plist_buddy_response = `/usr/libexec/PlistBuddy -c \"print :BugsnagAPIKey\" \"#{default_info_plist_location.first}\"`\n  api_key = plist_buddy_response if $?.success?\nend\n\nfork do\n  Process.setsid\n  STDIN.reopen(\"/dev/null\")\n  STDOUT.reopen(\"/dev/null\", \"a\")\n  STDERR.reopen(\"/dev/null\", \"a\")\n\n  require 'shellwords'\n\n  Dir[\"#{ENV[\"DWARF_DSYM_FOLDER_PATH\"]}/*/Contents/Resources/DWARF/*\"].each do |dsym|\n    curl_command = \"curl -F dsym=@#{Shellwords.escape(dsym)} -F projectRoot=#{Shellwords.escape(ENV[\"PROJECT_DIR\"])} \"\n    curl_command += \"-F apiKey=#{Shellwords.escape(api_key)} \" if api_key\n    curl_command += \"https://upload.bugsnag.com/\"\n    system(curl_command)\n  end\nend\n";
 			showEnvVarsInLog = 0;
 		};
+		ACB5FED7D06D154B7542A14D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AFBFA011C32F80A73756DCC0 /* Upload Bugsnag dSYM */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1391,68 +1390,46 @@
 			shellScript = "# First, attempt to get the API key from an environment variable\napi_key = ENV[\"BUGSNAG_API_KEY\"]\n\n# If not present, attempt to lookup the value from the Info.plist\nif !api_key\n  default_info_plist_location = Dir.glob(\"./{ios/,}*/Info.plist\").reject {|path| path =~ /build|test/i }\n  plist_buddy_response = `/usr/libexec/PlistBuddy -c \"print :BugsnagAPIKey\" \"#{default_info_plist_location.first}\"`\n  api_key = plist_buddy_response if $?.success?\nend\n\nfork do\n  Process.setsid\n  STDIN.reopen(\"/dev/null\")\n  STDOUT.reopen(\"/dev/null\", \"a\")\n  STDERR.reopen(\"/dev/null\", \"a\")\n\n  require 'shellwords'\n\n  Dir[\"#{ENV[\"DWARF_DSYM_FOLDER_PATH\"]}/*/Contents/Resources/DWARF/*\"].each do |dsym|\n    curl_command = \"curl -F dsym=@#{Shellwords.escape(dsym)} -F projectRoot=#{Shellwords.escape(ENV[\"PROJECT_DIR\"])} \"\n    curl_command += \"-F apiKey=#{Shellwords.escape(api_key)} \" if api_key\n    curl_command += \"https://upload.bugsnag.com/\"\n    system(curl_command)\n  end\nend\n";
 			showEnvVarsInLog = 0;
 		};
-		C9C3F5F0F40686FA33C12CFD /* [CP] Check Pods Manifest.lock */ = {
+		C8EACF08AAFF6DFB1D467D30 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ECC-WalletUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D5A9876DA160F45BE63B140F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ECC-Wallet-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7E2B8169ABD70574931A79D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet/Pods-ECC-Wallet-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5204091B012E4760CC918D7 /* [CP] Check Pods Manifest.lock */ = {
+		EBC68B89D54B5D532193479E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ECC-WalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A94A3819B2747DC33CDA5A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1474,21 +1451,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F96A18D5E304CF3F0E42E46A /* [CP] Embed Pods Frameworks */ = {
+		F8FBDF16C60751180DBBF5AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ECC-WalletUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ECC-Wallet-no-logging/Pods-ECC-Wallet-no-logging-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2059,7 +2041,7 @@
 		};
 		0D12512A23B557E60014EE3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 159892960621B7F4FB5B61DE /* Pods-ECC-Wallet.debug.xcconfig */;
+			baseConfigurationReference = A9C936ECAE650756CD95A13C /* Pods-ECC-Wallet.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2087,7 +2069,7 @@
 		};
 		0D12512B23B557E60014EE3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96A9AF65A0DDBF79EB116C5C /* Pods-ECC-Wallet.release.xcconfig */;
+			baseConfigurationReference = C43042AD1185E522A0D57B67 /* Pods-ECC-Wallet.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2114,7 +2096,7 @@
 		};
 		0D12512D23B557E60014EE3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F438A2650044C860F1EBEE4D /* Pods-ECC-WalletTests.debug.xcconfig */;
+			baseConfigurationReference = B399D06BFAE9ED04ED5CC009 /* Pods-ECC-WalletTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2137,7 +2119,7 @@
 		};
 		0D12512E23B557E60014EE3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 318E06008AB242D671EE43D8 /* Pods-ECC-WalletTests.release.xcconfig */;
+			baseConfigurationReference = AC389044A9F41BDDC7CD8191 /* Pods-ECC-WalletTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2160,7 +2142,7 @@
 		};
 		0D12513023B557E60014EE3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77F33BFE519EA727A663A8C6 /* Pods-ECC-WalletUITests.debug.xcconfig */;
+			baseConfigurationReference = 27077FD0F143F2275F82BFD0 /* Pods-ECC-WalletUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2181,7 +2163,7 @@
 		};
 		0D12513123B557E60014EE3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8569B8A4939C2D8CEE1E6F1 /* Pods-ECC-WalletUITests.release.xcconfig */;
+			baseConfigurationReference = D3BFA5E7B1111D26654F4B76 /* Pods-ECC-WalletUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2202,12 +2184,12 @@
 		};
 		0DCDFFE424B6722B000F6999 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36E33B43704978F1D2FE8912 /* Pods-ECC-Wallet-no-logging.debug.xcconfig */;
+			baseConfigurationReference = FDA0E8BB8902BB0283102CA6 /* Pods-ECC-Wallet-no-logging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 132;
+				CURRENT_PROJECT_VERSION = 133;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"wallet/Preview Content\"";
 				DEVELOPMENT_TEAM = QKFHD72H66;
@@ -2219,7 +2201,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.32;
+				MARKETING_VERSION = 1.33;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nighthawkapps.wallet.ios;
 				PRODUCT_NAME = "ECC-Wallet-no-logs";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2230,12 +2212,12 @@
 		};
 		0DCDFFE524B6722B000F6999 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC66928975BDE84FA99E4352 /* Pods-ECC-Wallet-no-logging.release.xcconfig */;
+			baseConfigurationReference = 76EE601CACFADE04FB6E699F /* Pods-ECC-Wallet-no-logging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 132;
+				CURRENT_PROJECT_VERSION = 133;
 				DEVELOPMENT_ASSET_PATHS = "\"wallet/Preview Content\"";
 				DEVELOPMENT_TEAM = QKFHD72H66;
 				ENABLE_BITCODE = NO;
@@ -2246,7 +2228,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.32;
+				MARKETING_VERSION = 1.33;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nighthawkapps.wallet.ios;
 				PRODUCT_NAME = "ECC-Wallet-no-logs";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2257,7 +2239,7 @@
 		};
 		0DE303C2263A158400CF877A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 058B182E8EDC0388B4BED0CF /* Pods-ECC-Wallet-Testnet.debug.xcconfig */;
+			baseConfigurationReference = AFD5201D57BD84169EE880E7 /* Pods-ECC-Wallet-Testnet.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Testnet";
@@ -2285,7 +2267,7 @@
 		};
 		0DE303C3263A158400CF877A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF01D5102D7FADE11D11C96B /* Pods-ECC-Wallet-Testnet.release.xcconfig */;
+			baseConfigurationReference = C949FC3397CC07567DC60928 /* Pods-ECC-Wallet-Testnet.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Testnet";

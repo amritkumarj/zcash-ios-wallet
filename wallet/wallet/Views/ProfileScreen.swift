@@ -51,7 +51,7 @@ struct ProfileScreen: View {
                                 }
                             
                             Button(action: {
-                                let url = URL(string: "https://sideshift.ai/a/EqcQp4iUM")!
+                                let url = URL(string: "https://sideshift.ai/")!
                                 
                                 UIApplication.shared.open(url)}) {
                                     Text("Fund my wallet via SideShift.ai")
@@ -61,10 +61,10 @@ struct ProfileScreen: View {
                                 }
                             
                             Button(action: {
-                                let url = URL(string: "https://twitter.com/nighthawkwallet")!
+                                let url = URL(string: "https://twitter.com/NighthawkWallet")!
                                 
                                 UIApplication.shared.open(url)}) {
-                                    Text("@nighthawkwallet")
+                                    Text("@NighthawkWallet")
                                         .foregroundColor(.black)
                                         .zcashButtonBackground(shape: .roundedCorners(fillStyle: .solid(color: Color.zYellow)))
                                         .frame(height: ScreenConstants.buttonHeight)

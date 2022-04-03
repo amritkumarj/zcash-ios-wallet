@@ -10,6 +10,11 @@ import Foundation
 import SwiftUI
 
 extension Color {
+    
+    static let zSalmon = Color(red: 254, green: 119, blue: 87)
+    static let zSalmonLight = Color(red: 254, green: 173, blue: 154)
+    static let zSalmonDark = Color(red: 206, green: 98, blue: 78)
+
     /// \#FFB900 Color(red: 1, green: 185.0/255.0, blue: 0)
     static let zYellow = Color(red: 1, green: 185.0/255.0, blue: 0)
     
