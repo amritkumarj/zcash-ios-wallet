@@ -1,5 +1,12 @@
 # Changelog
 
+
+## build 134
+* point to SDK 0.13.0-beta.2
+
+## build 133
+* point to SDK 0.12.0-beta.7
+
 ## build 131
 * Auto-shielding release with MoonPay support & switch to using zcashblockexplorer.com
 
