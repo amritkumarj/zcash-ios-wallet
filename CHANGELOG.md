@@ -1,5 +1,7 @@
 # Changelog
 
+## build 135
+* point to SDK 0.13.1-beta
 
 ## build 134
 * point to SDK 0.13.0-beta.2
