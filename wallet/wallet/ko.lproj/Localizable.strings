@@ -86,6 +86,7 @@
 "feedback_default" = "유효한 zcash 주소를 입력하십시오";
 "feedback_shieldedaddress" = "유효한 쉴드된 주소입니다.";
 "feedback_transparentaddress" = "유효한 투명 주소입니다.";
+"feedback_unsaddress" = "유효한 Unstoppable Domains 주소.";
 "feedback_sameaddress" = "경고, 이것은 귀하의 주소 인 것 같습니다!";
 "feedback_invalidaddress" = "경고,이 주소는 유효하지 않습니다!";
 "label_memo" = "메모";

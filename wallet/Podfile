@@ -10,6 +10,7 @@ def base_pods
   pod 'TinyQRScanner'
   pod 'lottie-ios'
   pod 'CombineUrlSessionDownloader'
+  pod 'UnstoppableDomainsResolution'
 end
 
 inhibit_all_warnings!

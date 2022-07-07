@@ -54,6 +54,7 @@
 "feedback_default" = "请输入一个有效的 Zcash 地址";
 "feedback_shieldedaddress" = "这是一个有效的隐蔽地址";
 "feedback_transparentaddress" = "这是一个有效的透明地址";
+"feedback_unsaddress" = "这是一 Unstoppable Domains 个有效的地址";
 "feedback_sameaddress" = "警告，该地址似乎是您自己的地址！";
 "feedback_invalidaddress" = "警告，该地址不是一个有效地址！";
 "label_memo" = "备注";

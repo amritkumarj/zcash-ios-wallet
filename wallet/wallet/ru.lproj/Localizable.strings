@@ -57,6 +57,7 @@
 "feedback_default" = "Введите действующий Zcash-адрес ";
 "feedback_shieldedaddress" = "Это действующий защищённый адрес";
 "feedback_transparentaddress" = "Это действующий прозрачный адрес";
+"feedback_unsaddress" = "Это действительны Unstoppable Domains й адрес";
 "feedback_sameaddress" = "Внимание, похоже, это ваш адрес!";
 "feedback_invalidaddress" = "Внимание, этот адрес недействителен!";
 "label_memo" = "Заметка";

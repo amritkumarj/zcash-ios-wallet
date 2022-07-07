@@ -40,6 +40,7 @@
 "feedback_default" = "Enter a valid Zcash address";
 "feedback_shieldedaddress" = "This is a valid shielded address";
 "feedback_transparentaddress" = "This is a valid transparent address";
+"feedback_unsaddress" = "This is a valid Unstoppable Domains address";
 "feedback_addresscopied" = "Address Copied!";
 "feedback_invalidaddress" = "Warning, this address is not valid!";
 "feedback_sameaddress" = "Warning, this appears to be your address!";

@@ -386,6 +386,9 @@
 		8D73959024A40E6C00936DE3 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73958F24A40E6C00936DE3 /* String+localized.swift */; };
 		95781C35C9D0E09387A7D327 /* Pods_ECC_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E6D3D75072C7B2F78CB93D /* Pods_ECC_WalletTests.framework */; };
 		F6635A3AFD4A9F4343525C83 /* Pods_ECC_Wallet_Testnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2A697F9E55EB93244DEAD7 /* Pods_ECC_Wallet_Testnet.framework */; };
+		FC16BBC6287690480067AE05 /* UNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BBC5287690480067AE05 /* UNS.swift */; };
+		FC16BBC7287690480067AE05 /* UNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BBC5287690480067AE05 /* UNS.swift */; };
+		FC16BBC8287690480067AE05 /* UNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BBC5287690480067AE05 /* UNS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -600,6 +603,7 @@
 		D39298903D601E937A682DD3 /* Pods-ECC-WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletUITests.debug.xcconfig"; path = "Target Support Files/Pods-ECC-WalletUITests/Pods-ECC-WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D49511C9F87CDAEC7216FDB6 /* Pods-ECC-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletTests.release.xcconfig"; path = "Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6A940A09B24899151547F75 /* Pods-ECC-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECC-WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-ECC-WalletTests/Pods-ECC-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC16BBC5287690480067AE05 /* UNS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -722,6 +726,7 @@
 				0D2607D624F42C46006FDC36 /* PasteboardHelper.swift */,
 				0D562FD3257841FD00E843DD /* MemoUtils.swift */,
 				0D3E6CFD26814E5D000EF685 /* SaplingParameterDownloader+Combine.swift */,
+				FC16BBC5287690480067AE05 /* UNS.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1572,6 +1577,7 @@
 				0D100EDE23BA92A50089DB22 /* Colors.swift in Sources */,
 				0DE51DB023BEBE5100709636 /* KeyPad.swift in Sources */,
 				0D92AEBE2422D6F30028AD53 /* ZcashTapToSendButton.swift in Sources */,
+				FC16BBC6287690480067AE05 /* UNS.swift in Sources */,
 				0D9C203D23D77D4B006F1510 /* WalletDetails.swift in Sources */,
 				0DBE19F6268E666100F92FD9 /* ShieldNowDialog.swift in Sources */,
 				0DC167B123BE37B300332890 /* BalanceUtils.swift in Sources */,
@@ -1795,6 +1801,7 @@
 				0DCDFFCE24B6722B000F6999 /* SceneDelegate.swift in Sources */,
 				0D794B71268BA74E00A64426 /* AutoShieldingNotice.swift in Sources */,
 				0D562FD5257841FD00E843DD /* MemoUtils.swift in Sources */,
+				FC16BBC8287690480067AE05 /* UNS.swift in Sources */,
 				0DCDFFCF24B6722B000F6999 /* QRCodeContainer.swift in Sources */,
 				0DCDFFD024B6722B000F6999 /* TransactionDetail.swift in Sources */,
 				0DC0847A24BE583400F498A5 /* RateComponent.swift in Sources */,
@@ -1834,6 +1841,7 @@
 				0DE3035A263A158400CF877A /* Colors.swift in Sources */,
 				0DE3035B263A158400CF877A /* KeyPad.swift in Sources */,
 				0DE3035C263A158400CF877A /* ZcashTapToSendButton.swift in Sources */,
+				FC16BBC7287690480067AE05 /* UNS.swift in Sources */,
 				0DE3035D263A158400CF877A /* WalletDetails.swift in Sources */,
 				0DBE19F7268E666100F92FD9 /* ShieldNowDialog.swift in Sources */,
 				0DE3035E263A158400CF877A /* BalanceUtils.swift in Sources */,

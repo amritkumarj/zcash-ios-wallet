@@ -15,10 +15,12 @@ struct SendTransaction: View {
     @State var sendOk = false
     @State var addressHelperSelection: AddressHelperView.Selection = .none 
     @State var scanViewModel = ScanAddressViewModel(shouldShowSwitchButton: false, showCloseButton: true)
+    @State var unsDomains = [String:String]()
+    var uns = UNS()
     var availableBalance: Bool {
         ZECCWalletEnvironment.shared.synchronizer.verifiedBalance.value > 0
     }
-    
+
     var addressSubtitle: String {
         let environment = ZECCWalletEnvironment.shared
         guard !flow.address.isEmpty else {
@@ -26,6 +28,7 @@ struct SendTransaction: View {
         }
         let validShielded = environment.isValidShieldedAddress(flow.address)
         let validTransparent = environment.isValidTransparentAddress(flow.address)
+        let validUNS = unsDomains[flow.address] != nil
         
         if validShielded {
             return subtextForValid(shielded: flow.address)
@@ -35,14 +38,37 @@ struct SendTransaction: View {
             return subtextForValid(transparent: flow.address)
         }
         
+        if validUNS {
+            return subtextForValid(uns: flow.address)
+        } else {
+            uns.isValidUNSAddress(address: flow.address) { result in
+                switch result {
+                    case .success(let val):
+                        if flow.address == val[0] {
+                            unsDomains[val[0]] = val[1]
+                        }
+                    case .failure(_):
+                        return;
+                }
+            }
+        }
+
         return "feedback_invalidaddress".localized()
     }
-    
+
     func subtextForValid(shielded address: String) -> String {
         if ZECCWalletEnvironment.shared.synchronizer.unifiedAddress.zAddress == address {
             return "feedback_sameaddress".localized()
         } else {
             return "feedback_shieldedaddress".localized()
+        }
+    }
+    
+    func subtextForValid(uns address: String) -> String {
+        if ZECCWalletEnvironment.shared.synchronizer.unifiedAddress.zAddress == address {
+            return "feedback_sameaddress".localized()
+        } else {
+            return "feedback_unsaddress".localized()
         }
     }
     
@@ -69,7 +95,7 @@ struct SendTransaction: View {
     }
     
     var validAddress: Bool {
-        ZECCWalletEnvironment.shared.isValidAddress(flow.address)
+        ZECCWalletEnvironment.shared.isValidAddress(flow.address) || (unsDomains[flow.address] != nil)
     }
     
     var sufficientAmount: Bool {
@@ -120,11 +146,16 @@ struct SendTransaction: View {
             return Color.zGray2
         }
     }
+    func changeUNSAddress(){
+        if unsDomains[flow.address] != nil {
+            flow.address = unsDomains[flow.address]!
+        }
+    }
     
     var body: some View {
+        
         ZStack {
             ZcashBackground()
-            
             VStack(alignment: .leading, spacing: 20) {
                 
                 ZcashNavigationBar(
@@ -143,6 +174,7 @@ struct SendTransaction: View {
                     
                     trailingItem: {
                         Button(action: {
+                            changeUNSAddress()
                             AuthenticationHelper.authenticate(with: "send_securityauth".localized())
                         }) {
                             Text("button_send")
@@ -174,7 +206,7 @@ struct SendTransaction: View {
                     accessoryIcon: Image("QRCodeIcon")
                         .renderingMode(.original),
                     activeColor: recipientActiveColor,
-                    onEditingChanged: { _ in },
+                    onEditingChanged: {_ in },
                     onCommit: {
                         tracker.track(.tap(action: .sendAddressDoneAddress), properties: [:])
                 }

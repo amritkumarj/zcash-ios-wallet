@@ -84,6 +84,7 @@
 "feedback_default" = "Inserisci un indirizzo Zcash valido";
 "feedback_shieldedaddress" = "Questo è un indirizzo blindato valido";
 "feedback_transparentaddress" = "Questo è un indirizzo trasparente valido";
+"feedback_unsaddress" = "Questo è un indirizzo Unstoppable Domains valido";
 "feedback_sameaddress" = "Attenzione, sembra che questo sia il tuo indirizzo!";
 "feedback_invalidaddress" = "Attenzione, questo indirizzo non è valido!";
 "label_memo" = "Memo";

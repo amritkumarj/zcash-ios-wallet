@@ -60,6 +60,7 @@
 "feedback_default" = "Escribe una direccion blindada de Zcash";
 "feedback_shieldedaddress" = "Esta es una dirección blindada válida";
 "feedback_transparentaddress" = "Esta es una dirección transparente válida";
+"feedback_unsaddress" = "Esta es una dirección Unstoppable Domains sválida";
 "feedback_addresscopied" = "¡Dirección Copiada!";
 "feedback_invalidaddress" = "¡Cuidado, esta dirección no es válida!";
 "feedback_sameaddress" = "¡Cuidado, parece que esta es tu propia dirección!";
