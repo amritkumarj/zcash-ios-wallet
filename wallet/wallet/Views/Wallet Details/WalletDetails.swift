@@ -8,6 +8,8 @@
 
 import SwiftUI
 import Combine
+import ZcashLightClientKit
+
 class WalletDetailsViewModel: ObservableObject {
     // look at before changing https://stackoverflow.com/questions/60956270/swiftui-view-not-updating-based-on-observedobject
     @Published var items = [DetailModel]()
@@ -185,7 +187,7 @@ extension DetailModel {
                         id: "bb031",
                         zAddress: "Ztestsapling1ctuamfer5xjnnrdr3xdazenljx0mu0gutcf9u9e74tr2d3jwjnt0qllzxaplu54hgc2tyjdc2p6",
                         date: Date(),
-                        zecAmount: -12.345,
+                        amount: Zatoshi(-12_345_000),
                         status: .paid(success: true),
                         subtitle: "1 of 10 confirmations"
                         
@@ -196,7 +198,7 @@ extension DetailModel {
                         id: "bb032",
                         zAddress: "Ztestsapling1ctuamfer5xjnnrdr3xdazenljx0mu0gutcf9u9e74tr2d3jwjnt0qllzxaplu54hgc2tyjdc2p6",
                         date: Date(),
-                        zecAmount: 2.0,
+                        amount: Zatoshi(2 * Zatoshi.Constants.oneZecInZatoshi),
                         status: .received,
                         subtitle: "Received 11/16/19 4:12pm"
                         
@@ -207,7 +209,7 @@ extension DetailModel {
                         id: "bb033",
                         zAddress: "Ztestsapling1ctuamfer5xjnnrdr3xdazenljx0mu0gutcf9u9e74tr2d3jwjnt0qllzxaplu54hgc2tyjdc2p6",
                         date: Date(),
-                        zecAmount: 2.0,
+                        amount: Zatoshi(2 * Zatoshi.Constants.oneZecInZatoshi),
                         status: .paid(success: false),
                         subtitle: "Received 11/16/19 4:12pm"
                     )

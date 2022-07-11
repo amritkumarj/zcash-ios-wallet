@@ -2261,7 +2261,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 136;
+				CURRENT_PROJECT_VERSION = 137;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"wallet/Preview Content\"";
 				DEVELOPMENT_TEAM = QKFHD72H66;
@@ -2273,7 +2273,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.36;
+				MARKETING_VERSION = 1.37;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nighthawkapps.wallet.ios;
 				PRODUCT_NAME = "ECC-Wallet-no-logs";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2289,7 +2289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 136;
+				CURRENT_PROJECT_VERSION = 137;
 				DEVELOPMENT_ASSET_PATHS = "\"wallet/Preview Content\"";
 				DEVELOPMENT_TEAM = QKFHD72H66;
 				ENABLE_BITCODE = NO;
@@ -2300,7 +2300,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.36;
+				MARKETING_VERSION = 1.37;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nighthawkapps.wallet.ios;
 				PRODUCT_NAME = "ECC-Wallet-no-logs";
 				PROVISIONING_PROFILE_SPECIFIER = "";
