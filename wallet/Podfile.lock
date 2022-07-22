@@ -1,6 +1,6 @@
 PODS:
   - _NIODataStructures (2.40.0)
-  - Bugsnag (6.19.0)
+  - Bugsnag (6.21.0)
   - CGRPCZlib (1.8.0)
   - CNIOAtomics (2.40.0)
   - CNIOBoringSSL (2.19.0)
@@ -27,13 +27,13 @@ PODS:
   - libzcashlc (0.0.3)
   - Logging (1.4.0)
   - lottie-ios (3.4.0)
-  - Mixpanel-swift (3.5.0):
-    - Mixpanel-swift/Complete (= 3.5.0)
-  - Mixpanel-swift/Complete (3.5.0)
+  - Mixpanel-swift (3.5.1):
+    - Mixpanel-swift/Complete (= 3.5.1)
+  - Mixpanel-swift/Complete (3.5.1)
   - MnemonicSwift (2.2.4)
-  - SQLite.swift (0.12.2):
-    - SQLite.swift/standard (= 0.12.2)
-  - SQLite.swift/standard (0.12.2)
+  - SQLite.swift (0.13.3):
+    - SQLite.swift/standard (= 0.13.3)
+  - SQLite.swift/standard (0.13.3)
   - SwiftNIO (2.40.0):
     - _NIODataStructures (= 2.40.0)
     - CNIOAtomics (= 2.40.0)
@@ -166,10 +166,10 @@ PODS:
     - SwiftNIOTLS (< 3, >= 2.32.0)
   - SwiftProtobuf (1.19.0)
   - TinyQRScanner (1.0.1)
-  - ZcashLightClientKit (0.15.0-beta):
+  - ZcashLightClientKit (0.15.1-beta):
     - gRPC-Swift (~> 1.8)
     - libzcashlc (= 0.0.3)
-    - SQLite.swift (~> 0.12.2)
+    - SQLite.swift (~> 0.13)
   - zealous-logger (1.0.0):
     - CocoaLumberjack/Swift (~> 3.7.0)
 
@@ -182,7 +182,7 @@ DEPENDENCIES:
   - Mixpanel-swift
   - MnemonicSwift (from `https://github.com/zcash-hackworks/MnemonicSwift.git`, branch `master`)
   - TinyQRScanner
-  - ZcashLightClientKit (from `https://github.com/zcash/ZcashLightClientKit.git`, tag `0.15.0-beta`)
+  - ZcashLightClientKit (from `https://github.com/zcash/ZcashLightClientKit.git`, tag `0.15.1-beta`)
   - zealous-logger (from `https://github.com/zcash-hackworks/zealous-logger`, branch `master`)
 
 SPEC REPOS:
@@ -228,7 +228,7 @@ EXTERNAL SOURCES:
     :git: https://github.com/zcash-hackworks/MnemonicSwift.git
   ZcashLightClientKit:
     :git: https://github.com/zcash/ZcashLightClientKit.git
-    :tag: 0.15.0-beta
+    :tag: 0.15.1-beta
   zealous-logger:
     :branch: master
     :git: https://github.com/zcash-hackworks/zealous-logger
@@ -239,14 +239,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/zcash-hackworks/MnemonicSwift.git
   ZcashLightClientKit:
     :git: https://github.com/zcash/ZcashLightClientKit.git
-    :tag: 0.15.0-beta
+    :tag: 0.15.1-beta
   zealous-logger:
     :commit: 8667d3b17dfc39fdc252fb49b1b02180ea2a4fc4
     :git: https://github.com/zcash-hackworks/zealous-logger
 
 SPEC CHECKSUMS:
   _NIODataStructures: 3d45d8e70a1d17a15b1dc59d102c63dbc0525ffd
-  Bugsnag: ea254fd954aabf0cab5b7c526f6a43e691c9cb4f
+  Bugsnag: 900773b8c81038094b7c4078448ef8c3c18f6c10
   CGRPCZlib: 298dd3237ba4bd7b3eed109e7080ff3324b7d9c9
   CNIOAtomics: 8edf08644e5e6fa0f021c239be9e8beb1cd9ef18
   CNIOBoringSSL: 2c9c96c2e95f15e83fb8d26b9738d939cc39ae33
@@ -262,9 +262,9 @@ SPEC CHECKSUMS:
   libzcashlc: 1dfab6ecf157d60e58349906842f370bc65a5962
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
   lottie-ios: 69495122151a378fdc7d1bb4c5930347e37baf1f
-  Mixpanel-swift: 8ee88853e1443a14f887de51ecc278c07f832098
+  Mixpanel-swift: 89d88f4d3dd1b4b3b69bd05060756eb1248b76f0
   MnemonicSwift: 40ba76b951b75b32e2719df989b4d6da5798fe26
-  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  SQLite.swift: 903bfa3bc9ab06345fdfbb578e34f47cfcf417da
   SwiftNIO: 829958aab300642625091f82fc2f49cb7cf4ef24
   SwiftNIOConcurrencyHelpers: 697370136789b1074e4535eaae75cbd7f900370e
   SwiftNIOCore: 473fdfe746534d7aa25766916459eeaf6f92ef49
@@ -280,9 +280,9 @@ SPEC CHECKSUMS:
   SwiftNIOTransportServices: 0b2b407819d82eb63af558c5396e33c945759503
   SwiftProtobuf: 6ef3f0e422ef90d6605ca20b21a94f6c1324d6b3
   TinyQRScanner: 4077088ff2e8d476af79e6035413648c2c7900ef
-  ZcashLightClientKit: 09dab174f05e695a2109b6d310cd2229295f9261
+  ZcashLightClientKit: 1876bbd7f3d68e2e1137e3c1c80e36370db920f9
   zealous-logger: 2f33820d7d7e723796dabc51d60942b51b9ab024
 
-PODFILE CHECKSUM: 1c198df8433bbb6ef6ac0d05b43fee2830938c96
+PODFILE CHECKSUM: 78f0f145b45877ea2bb35614e36b89879e899810
 
 COCOAPODS: 1.11.3
