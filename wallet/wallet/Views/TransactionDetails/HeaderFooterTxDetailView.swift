@@ -102,7 +102,7 @@ struct HeaderFooterFactory {
                                        sent: Bool,
                                        formatValue: (Double) -> String = Self.defaultFormatter) -> HeaderFooterTxDetailView {
         HeaderFooterTxDetailView(
-                           caption: (sent ? Text("Total Spent") : Text("You Received"))
+                           caption: (sent ? Text("You Sent") : Text("You Received"))
                                .foregroundColor(.zYellow)
                                .font(.footnote),
                            mainText: Text("$\(formatValue(value))")
@@ -119,7 +119,7 @@ struct HeaderFooterFactory {
                                        formatValue: (Double) -> String = Self.defaultFormatter) -> HeaderFooterTxDetailView {
         
         HeaderFooterTxDetailView(
-                          caption: (sent ? Text("Total Spent") : Text("You Received"))
+                          caption: (sent ? Text("Total Spent (including fees)") : Text("You Received"))
                               .foregroundColor(.zYellow)
                               .font(.footnote),
                           mainText: Text("$\(formatValue(value))")
