@@ -19,9 +19,10 @@ class UNS {
     }
     
     func isValidUNSAddress(address: String, completionHandler: @escaping (Result<[String], Error>) -> Void)  {
-         if self.isValidUNS(address: address){
+        let enableUNS = UserSettings.shared.enableUNS ?? false
+         if self.isValidUNS(address: address) && enableUNS {
 
-            guard let resolution = try? Resolution() else {
+           guard let resolution = try? Resolution() else {
               print ("Init of Resolution instance with default parameters failed...")
                 return;
             }

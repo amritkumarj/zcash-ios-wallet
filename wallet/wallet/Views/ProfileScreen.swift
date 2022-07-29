@@ -31,7 +31,8 @@ struct ProfileScreen: View {
     @State var showingSheet: Bool = false
     @State var shareItem: ShareItem? = nil
     @State var destination: Destination?
-    
+    @State private var enableUNS = UserSettings.shared.enableUNS ?? false
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -39,7 +40,18 @@ struct ProfileScreen: View {
                 ScrollView {
                     VStack(alignment: .center) {
                         VStack {
-                                                        
+                            Toggle(isOn: $enableUNS) {
+                                Text("Enable Unstoppable Domains")
+                                    .foregroundColor(.white)
+                                    .zcashButtonBackground(shape: .roundedCorners(fillStyle: .outline(color: .white, lineWidth: 1)))
+                                    .frame(height: ScreenConstants.buttonHeight)
+                                    .font(.system(size: 15)){
+                                        
+                                    }
+                            }.onChange(of: enableUNS) { value in
+                                UserSettings.shared.enableUNS  = value
+                            }
+                            
                             Button(action: {
                                 let url = URL(string: "https://buy.moonpay.com/?apikey=pk_live_SWNmrQMVF1fkyfdkQAX6nbzA2sCUXpMk&currencyCode=zec")!
                                 

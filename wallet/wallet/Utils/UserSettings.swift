@@ -21,6 +21,7 @@ class UserSettings {
         static let lastFeedbackDisplayedOnDate = "lastFeedbackDisplayedOnDate"
         static let didShowAutoShieldingNotice = "didShowAutoShieldingNotice"
         static let userTheme = "userTheme"
+        static let enableUNS = "enableUNS"
     }
     
     var didShowAutoShieldingNotice: Bool {
@@ -78,6 +79,15 @@ class UserSettings {
         }
         set {
             UserDefaults.standard.setValue(newValue, forKey: Keys.userTheme)
+        }
+    }
+    
+    var enableUNS: Bool? {
+        get {
+            UserDefaults.standard.bool(forKey: Keys.enableUNS)
+        }
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: Keys.enableUNS)
         }
     }
 }
