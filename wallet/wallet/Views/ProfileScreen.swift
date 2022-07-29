@@ -45,9 +45,7 @@ struct ProfileScreen: View {
                                     .foregroundColor(.white)
                                     .zcashButtonBackground(shape: .roundedCorners(fillStyle: .outline(color: .white, lineWidth: 1)))
                                     .frame(height: ScreenConstants.buttonHeight)
-                                    .font(.system(size: 15)){
-                                        
-                                    }
+                                    .font(.system(size: 15))
                             }.onChange(of: enableUNS) { value in
                                 UserSettings.shared.enableUNS  = value
                             }

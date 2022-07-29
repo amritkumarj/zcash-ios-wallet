@@ -1,5 +1,6 @@
 PODS:
   - _NIODataStructures (2.40.0)
+  - BigInt (5.2.0)
   - Bugsnag (6.21.0)
   - CGRPCZlib (1.8.0)
   - CNIOAtomics (2.40.0)
@@ -14,6 +15,7 @@ PODS:
   - CocoaLumberjack/Swift (3.7.4):
     - CocoaLumberjack/Core
   - CombineUrlSessionDownloader (1.0.1)
+  - CryptoSwift (1.5.1)
   - gRPC-Swift (1.8.0):
     - CGRPCZlib (= 1.8.0)
     - Logging (< 2.0.0, >= 1.4.0)
@@ -26,7 +28,7 @@ PODS:
   - KeychainSwift (19.0.0)
   - libzcashlc (0.0.3)
   - Logging (1.4.0)
-  - lottie-ios (3.4.0)
+  - lottie-ios (3.4.1)
   - Mixpanel-swift (3.5.1):
     - Mixpanel-swift/Complete (= 3.5.1)
   - Mixpanel-swift/Complete (3.5.1)
@@ -166,6 +168,9 @@ PODS:
     - SwiftNIOTLS (< 3, >= 2.32.0)
   - SwiftProtobuf (1.19.0)
   - TinyQRScanner (1.0.1)
+  - UnstoppableDomainsResolution (5.0.0):
+    - BigInt
+    - CryptoSwift
   - ZcashLightClientKit (0.15.1-beta):
     - gRPC-Swift (~> 1.8)
     - libzcashlc (= 0.0.3)
@@ -182,6 +187,7 @@ DEPENDENCIES:
   - Mixpanel-swift
   - MnemonicSwift (from `https://github.com/zcash-hackworks/MnemonicSwift.git`, branch `master`)
   - TinyQRScanner
+  - UnstoppableDomainsResolution
   - ZcashLightClientKit (from `https://github.com/zcash/ZcashLightClientKit.git`, tag `0.15.1-beta`)
   - zealous-logger (from `https://github.com/zcash-hackworks/zealous-logger`, branch `master`)
 
@@ -249,6 +255,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   _NIODataStructures: 3d45d8e70a1d17a15b1dc59d102c63dbc0525ffd
+  BigInt: f668a80089607f521586bbe29513d708491ef2f7
   Bugsnag: 900773b8c81038094b7c4078448ef8c3c18f6c10
   CGRPCZlib: 298dd3237ba4bd7b3eed109e7080ff3324b7d9c9
   CNIOAtomics: 8edf08644e5e6fa0f021c239be9e8beb1cd9ef18
@@ -260,11 +267,12 @@ SPEC CHECKSUMS:
   CNIOWindows: 3047f2d8165848a3936a0a755fee27c6b5ee479b
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   CombineUrlSessionDownloader: 8b740baf7d678a95b6972eb1edec324d6100ca39
+  CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
   gRPC-Swift: 74adcaaa62ac5e0a018938840328cb1fdfb09e7b
   KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
   libzcashlc: 1dfab6ecf157d60e58349906842f370bc65a5962
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
-  lottie-ios: 69495122151a378fdc7d1bb4c5930347e37baf1f
+  lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
   Mixpanel-swift: 89d88f4d3dd1b4b3b69bd05060756eb1248b76f0
   MnemonicSwift: 40ba76b951b75b32e2719df989b4d6da5798fe26
   SQLite.swift: 903bfa3bc9ab06345fdfbb578e34f47cfcf417da
@@ -283,9 +291,10 @@ SPEC CHECKSUMS:
   SwiftNIOTransportServices: 0b2b407819d82eb63af558c5396e33c945759503
   SwiftProtobuf: 6ef3f0e422ef90d6605ca20b21a94f6c1324d6b3
   TinyQRScanner: 4077088ff2e8d476af79e6035413648c2c7900ef
+  UnstoppableDomainsResolution: 3b364027c978a6abb97ea258128ec049620a6cd2
   ZcashLightClientKit: 1876bbd7f3d68e2e1137e3c1c80e36370db920f9
   zealous-logger: 2f33820d7d7e723796dabc51d60942b51b9ab024
 
-PODFILE CHECKSUM: 78f0f145b45877ea2bb35614e36b89879e899810
+PODFILE CHECKSUM: 3340bc8964e74e5ff08a4da54e5e5f15dd5f578b
 
 COCOAPODS: 1.11.3
