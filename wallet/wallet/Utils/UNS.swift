@@ -2,7 +2,7 @@
 //  UNS.swift
 //  ECC-Wallet
 //
-//  Created by Dhruv Jain on 07/07/22.
+//  Created by Amrit Jain on 07/07/22.
 //  Copyright © 2022 Francisco Gindre. All rights reserved.
 //
 
